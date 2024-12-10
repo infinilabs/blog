@@ -9,7 +9,7 @@ logo_darkmode = "images/logo-darkmode.png"
 logo_width = "160px"
 logo_height = "32px"
 
-# logo_link = "/blog/"
+logo_link = "/"
 
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
