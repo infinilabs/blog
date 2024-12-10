@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "name": "twitter",
+      "icon": "fab fa-twitter",
+      "link": "https://twitter.com/infinilabs"
+    },
+    {
+      "name": "discord",
+      "icon": "fab fa-discord",
+      "link": "https://discord.gg/4tKTMkkvVX"
+    },
+    {
+      "name": "github",
+      "icon": "fab fa-github",
+      "link": "https://github.com/infinilabs"
+    },
+    {
+      "name": "linkedin",
+      "icon": "fab fa-linkedin",
+      "link": "https://www.linkedin.com/company/infinilabs"
+    }
+  ]
+}
