@@ -3,7 +3,7 @@ title: "Welcome to the INFINI Labs Blog! 🚀"
 meta_title: "Welcome to INFINI Labs"
 description: "The first post of our blog, sharing our journey and passion for search and innovation."
 date: 2024-12-10T05:00:00Z
-image: "/images/posts/2024/welcome-to-our-blog.png"
+image: "/images/posts/2024/welcome-to-our-blog.jpg"
 categories: ["Welcome", "Blog"]
 author: "Medcl"
 tags: ["welcome", "search", "open source"]
