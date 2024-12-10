@@ -4,13 +4,18 @@ meta_title: "Adding Searchbox to Hugo Blog!"
 description: "How to add a searchbox to your hugoblog site."
 date: 2024-12-10T05:00:00Z
 image: "/images/posts/2024/adding-searchbox-to-blog-site.png"
-categories: ["Welcome", "Blog"]
+categories: ["Pizza", "Search"]
 author: "Medcl"
-tags: ["search", "searchbox", "hugo"]
+tags: ["search", "searchbox", "hugo", "pizza","pizza-searchbox", "pizza-wasm", "wasm", "hugo"]
 draft: false
 ---
 
+As a static website, having a search function significantly enhances the user experience, allowing readers to locate content quickly and efficiently. Whether you’re managing a personal blog or a comprehensive documentation site, a search box is an essential feature to improve navigation and engagement.  
+
+In this article, we’ll guide you through the step-by-step process of integrating a search box into your Hugo-powered site. We’ll be using **Pizza**, a blazing-fast, WASM-based search engine that outperforms traditional JavaScript-based solutions. Pizza supports the complete Lucene query syntax, offering robust and versatile search capabilities for your site. From setup to customization, we’ll cover everything you need to create a powerful and seamless search experience.  
+
 ## What is INFINI Pizza?
+
 INFINI Pizza is an upcoming search engine developed by INFINI Labs, written in Rust (soon to be fully open-sourced). The basic search capabilities have already been completed, and based on the core engine of INFINI Pizza, a WASM version of the ultra-lightweight kernel is provided. This can be easily embedded into various application systems, such as websites, especially static sites or small blog systems.
 
 Currently, The website of INFINI Pizza have integrated INFINI Pizza for WebAssembly. The specific search results are shown in the image below:
