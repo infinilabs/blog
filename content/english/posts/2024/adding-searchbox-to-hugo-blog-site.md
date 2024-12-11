@@ -20,7 +20,7 @@ INFINI Pizza is an upcoming search engine developed by INFINI Labs, written in R
 
 Currently, The website of INFINI Pizza have integrated INFINI Pizza for WebAssembly. The specific search results are shown in the image below:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-1.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-1.png)
 
 ## How to use INFINI Pizza for WebAssembly?
 Visit the website ([http://pizza.rs](http://pizza.rs/)), and by pressing the shortcut key 's', you can bring up the search box and experience the search capabilities provided by INFINI Pizza. Notably, during the search process, all of your actions are executed locally in the browser. Unlike traditional search implementations, where each query requires an interaction with a backend search server, INFINI Pizza for WebAssembly operates entirely offline. Even if you're disconnected from the internet, you can still enjoy a seamless search experience.
@@ -66,22 +66,22 @@ Since the example project has already uploaded the compiled code and samples, we
 
 Open your browser and visit: [http://localhost:8083](http://localhost:8083/), as shown below:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-2.gif)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-2.gif)
 
 Observe the network requests in the browser, and you'll see that it loads the sample index.json data:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-3.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-3.png)
 
 In practice, if it's our own static website or blog, simply ensuring that this file (index.json) with the appropriate format exists in the root directory of the site is enough to quickly integrate the search functionality you see into your own website. OK, with the functionality verified, let's start integrating it into our site.
 
 The official website of Pizza/INFINI Labs is statically generated using Hugo, and the index.json file does not need to be manually created. First, we need to enable Hugo to generate content in JSON format, which is a built-in capability of Hugo. We'll need to modify the configuration of the Hugo project:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-4.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-4.png)
 
 
 Add a JSON output option to the outputs parameter, and then define the JSON output format template in the theme's template files:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-5.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-5.png)
 
 
 The text content is as follows for easy copying and pasting. Save the file with the name index.json:
@@ -95,7 +95,7 @@ The text content is as follows for easy copying and pasting. Save the file with 
 ```
 OK, next, we need to add the tags we’ve used above to the metadata of each article or blog post on the site:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-6.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-6.png)
 
 
 OK, start the Hugo site:
@@ -127,7 +127,7 @@ OK, start the Hugo site:
 
 Open the Hugo site address and try accessing http://localhost:1313/index.json. You should be able to access the JSON file:
 
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-7.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-7.png)
 
 ## Integrate the search widget to Hugo
 
@@ -151,28 +151,28 @@ Do you remember the resource files we downloaded from Pizza-searchbox earlier? W
 ```
 
 Open the index.html file, and you will see the following content:
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-8.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-8.png)
 
 In order to integrate with the searchbox, we just need to add the three highlighted sections of code into our own static website.
 
 Copy the files from the assets directory to our Hugo site, in the following location:
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-9.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-9.png)
 
 Then, modify the Hugo theme templates by adding a segment of code to the html-head.html file in the header template of all pages to load our CSS stylesheet:
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-10.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-10.png)
 
 Next, continue modifying the Hugo theme template files by adding a segment of code to the footer template of all pages to load the JS script files:
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-11.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-11.png)
 
 Next, insert a `docsearch` tag in the appropriate place within the page template to place the search box, as shown in the image:
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-12.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-12.png)
 
 > the tag `docsearch` may be renamed  to `searchbox` in the future
 
 With that, the task is complete!
 
 Open your browser to see the final result:
-![INFINI Pizza Search](/images/posts/2024/pizza-search-box-13.png)
+![INFINI Pizza Search](/images/posts/2024/pizza-search-box/pizza-search-box-13.png)
 
 Finally, to summarize, with the help of the 3 lines of code and copy 3 files from INFINI Pizza searchbox, you can add a lightweight offline search functionality to your static site in just 5 minutes. Give it a try!
 
