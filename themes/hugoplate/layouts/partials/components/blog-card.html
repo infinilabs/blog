@@ -1,7 +1,7 @@
 <div class="bg-body dark:bg-darkmode-body">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    <a href="{{ .RelPermalink }}">
+    <a  href="{{ .RelPermalink }}">
       {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
     </a>
   {{ end }}
@@ -32,7 +32,9 @@
       </li>
     </ul>
   {{ end }}
-  <p class="mb-6">{{ .Summary }}</p>
+  <p class="mb-6">    
+    {{ .Summary | truncate 150 "…" }}
+  </p>
   <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
     {{ T "read_more" }}
   </a>
