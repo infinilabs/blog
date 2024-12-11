@@ -14,6 +14,9 @@
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
 
+    {{/*  searchbox  */}}
+    <link rel="stylesheet" crossorigin href="/assets/index-C1z1vz3D.css">
+
   </head>
 
   <body>
@@ -36,7 +39,7 @@
     {{/*  {{ partial "search-modal.html" (dict "Context" . ) }}  */}}
 
 
-    <main>
+    <main class="blog-main">
       {{ block "main" . }}{{ end }}
     </main>
 
@@ -46,5 +49,9 @@
 
     <!-- script (always cache it) -->
     {{ partialCached "essentials/script.html" . }}
+
+     {{/*  searchbox  */}}
+    <script type="module" crossorigin src="/assets/index-C7zxpy4f.js"></script>
+
   </body>
 </html>
