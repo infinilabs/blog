@@ -11,7 +11,7 @@
         <div class="lg:col-8">
           <div class="row">
             {{ $pages := where site.RegularPages "Type" "posts" }}
-            {{ $paginator := .Paginate $pages.ByTitle 4 }}
+            {{ $paginator := .Paginate $pages.ByDate.Reverse 8 }}
             {{ range $paginator.Pages }}
               <div class="md:col-6 mb-14">
                 {{ partial "components/blog-card" . }}
