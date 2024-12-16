@@ -68,7 +68,7 @@ func main() {
 }
 ```
 
-> You may use this online tool to generate your beauty ASCII based terminal header: [http://patorjk.com/software/taag/#p=display&h=2&v=1&f=Ogre&t=NewAPP](http://patorjk.com/software/taag/#p=display&h=2&v=1&f=Ogre&t=NewAPP)
+> We use this [online tool](http://patorjk.com/software/taag/#p=display&h=2&v=1&f=Ogre&t=NewAPP) to generate a beauty ASCII based terminal header.
 
 ## Create the config file
 ```shell
