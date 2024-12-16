@@ -148,5 +148,8 @@ Goodbye~
 
 ## Conclusion
 
+The demo code can be found [here](https://github.com/infinilabs/new-app-example).
+
 By leveraging the INFINI Framework, creating a Go application becomes significantly simpler and more efficient.
 The framework provides built-in commands and modules, streamlining the development process and enabling you to focus on building your application's core functionality.
+
