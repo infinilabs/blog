@@ -14,7 +14,12 @@ At INFINI Labs, we see product documentation as an integral part of the product 
 
 Take a look at our documentation site: [https://docs.infinilabs.com/](https://docs.infinilabs.com/). It hosts detailed documentation for each of our products.
 
+For each product, you can even switch between different versions effortlessly, like this:
+
+![Documentation Engineering](/images/posts/2024/documentation-engineering/versioin-switch-in-doc-site.jpg)
+
 Managing comprehensive documentation might seem like an enormous task, especially since we don’t have a dedicated documentation team. However, with limited resources and many competing priorities, we’ve streamlined a practical and efficient approach to product documentation engineering.
+
 
 So, how do we do it?
 
