@@ -33,7 +33,10 @@
     </ul>
   {{ end }}
   <p class="mb-6">    
-    {{ .Summary | truncate 150 "…" }}
+    {{ $summary := .Summary }}
+    {{ $cleanedSummary := $summary | replaceRE "<h[1-6][^>]*>.*?</h[1-6]>" "" }}
+    {{ $truncatedSummary := $cleanedSummary | plainify | truncate 150 }}
+    {{ $truncatedSummary | safeHTML }}
   </p>
   <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
     {{ T "read_more" }}
