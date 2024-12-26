@@ -1,7 +1,7 @@
 ---
 title: "Synching data between two Elasticsearch clusters using a gateway"
 meta_title: "Synching data between two ES clusters"
-description: "Introducing the request replication feature of the NFINI Gateway."
+description: "Introducing the request replication feature of the INFINI Gateway."
 date: 2024-12-21T09:00:00Z
 image: "/images/posts/2024/synching-data-between-two-clusters-using-gateway/cover.jpg"
 categories: ["Elasticsearch", "Gateway"]
@@ -78,24 +78,28 @@ curl -X POST "localhost:18000/_bulk?pretty" -H 'Content-Type: application/json' 
 '
 ```
 ![synching-data-between-two-clusters](/images/posts/2024/synching-data-between-two-clusters-using-gateway/pic-1.jpg)
+
 Query data from the PROD cluster.
 ```shell
 # Endpoint and credentials of the PROD cluster 
 curl 192.168.56.3:7171/test/_search?pretty -uelastic:password
 ```
 ![synching-data-between-two-clusters](/images/posts/2024/synching-data-between-two-clusters-using-gateway/pic-2.jpg)
+
 Query data from the BACKUP cluster.
 ```shell
 # Endpoint and credentials of the BACKUP cluster 
 curl 192.168.56.3:9200/test/_search?pretty -uadmin:admin
 ```
 ![synching-data-between-two-clusters](/images/posts/2024/synching-data-between-two-clusters-using-gateway/pic-3.jpg)
+
 Query data from the INFINI Gateway.
 ```shell
 # INFINI Gateway's endpoint & credentials of PROD cluster
 curl 192.168.56.3:18000/test/_search?pretty -uelastic:password
 ```
 ![synching-data-between-two-clusters](/images/posts/2024/synching-data-between-two-clusters-using-gateway/pic-4.jpg)
+
 Whether you are querying data from the PROD cluster or the BACKUP cluster, you will receive the same data. You also have the option to query data directly from the INFINI Gateway, which by default forwards search requests to the PROD cluster. 
 
 In case the PROD cluster is not accessible, it will automatically redirect search requests to the BACKUP cluster. The gateway not only supports replicating write data requests but also supports delete and update data requests.
