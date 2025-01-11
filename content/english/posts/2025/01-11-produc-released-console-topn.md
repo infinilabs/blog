@@ -22,6 +22,8 @@ Great question! **INFINI Console** is a **lightweight, cross-version, unified ma
 - Manage multiple **search clusters** across different versions seamlessly.
 - Gain centralized control for efficient cluster monitoring and maintenance.
 
+And *INFINI Console is the choice of Elasticsearch Professionals*
+
 With INFINI Console, you can streamline the management of your search ecosystem like never before! 🚀
 
 Learn more here: https://docs.infinilabs.com/console/
