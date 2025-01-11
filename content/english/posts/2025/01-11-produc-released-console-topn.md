@@ -22,7 +22,7 @@ Great question! **INFINI Console** is a **lightweight, cross-version, unified ma
 - Manage multiple **search clusters** across different versions seamlessly.
 - Gain centralized control for efficient cluster monitoring and maintenance.
 
-And *INFINI Console is the choice of Elasticsearch Professionals*
+> INFINI Console – The Choice of Elasticsearch Professionals. Be an Elasticsearch Pro Today!
 
 With INFINI Console, you can streamline the management of your search ecosystem like never before! 🚀
 
@@ -31,6 +31,8 @@ Learn more here: https://docs.infinilabs.com/console/
 ---
 
 ## **Spotlight: Introducing the TopN Feature**
+
+![TopN Screenshot](/images/posts/2025/console-top-n.png)
 
 ### **What is TopN?**
 TopN, introduced in **Console v1.28.0**, allows you to quickly identify the top-ranking data points for critical metrics across multiple dimensions. Designed for performance optimization and decision-making, TopN offers faster, more precise monitoring even as cluster sizes grow.
@@ -42,6 +44,8 @@ In the past, monitoring solutions often struggled to handle large clusters with 
 - Easy dynamic metric switching for deeper analysis.
 
 ---
+
+
 
 
 ### **Key Features**
