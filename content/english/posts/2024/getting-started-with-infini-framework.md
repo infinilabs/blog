@@ -2,11 +2,14 @@
 title: "Getting Started with INFINI Framework - Our homemade framework for building enterprise golang applications"
 meta_title: "Getting Started with INFINI Framework - Our homemade framework for building enterprise golang applications"
 description: "Discover how Coco AI revolutionizes enterprise search and collaboration with unified data and Gen-AI chat capabilities."
-date: 2024-12-15T08:00:00Z
+date: 2024-12-15T16:00:00.000000000+08:00
 image: "/images/posts/2024/introducing-infini-framework.jpg"
 categories: ["Framework", "Golang"]
 author: "Medcl"
 tags: ["INFINI Framework", "Golang", "Framework", "Enterprise"]
+lang: "en"
+category: "Blog"
+subcategory: "Product"
 draft: false
 ---
 
@@ -23,10 +26,12 @@ Let's use the `NewAPP` as the new project for example.
 ## Create the project folder
 
 Use the name `new_app` as the project id, and create the project folder as below:
+
 ```shell
 cd ~/go/src/infini.sh/
 mkdir new_app
 ```
+
 > Note: Ensure that `new_app` is located in the same directory as the `framework` folder. This structure is required for the Makefile to function correctly.
 
 ## Create the main file
@@ -71,9 +76,11 @@ func main() {
 > We use this [online tool](http://patorjk.com/software/taag/#p=display&h=2&v=1&f=Ogre&t=NewAPP) to generate a beauty ASCII based terminal header.
 
 ## Create the config file
+
 ```shell
 touch new_app.yml
 ```
+
 ## Create the makefile
 
 create a empty `Makefile`, and paste the code as below:
@@ -96,6 +103,7 @@ include ../framework/Makefile
 ```
 
 ## Build the application
+
 ```shell
 ➜  new_app OFFLINE_BUILD=true make build
 building new_app 1.0.0_SNAPSHOT main
@@ -117,6 +125,7 @@ restore generated info
 ```
 
 ## Run the application
+
 ```shell
 ➜  new_app git:(main) ✗ ./bin/new_app
      __               _      ___  ___
@@ -152,4 +161,3 @@ The demo code can be found [here](https://github.com/infinilabs/new-app-example)
 
 By leveraging the INFINI Framework, creating a Go application becomes significantly simpler and more efficient.
 The framework provides built-in commands and modules, streamlining the development process and enabling you to focus on building your application's core functionality.
-

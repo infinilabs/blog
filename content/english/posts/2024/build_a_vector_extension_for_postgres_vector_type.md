@@ -2,11 +2,14 @@
 title: "Build a Vector Extension for Postgres - Vector Type"
 meta_title: "Build a Vector Extension for Postgres - Vector Type"
 description: ""
-date: 2024-12-25T12:00:00Z
+date: 2024-12-25T20:00:00.000000000+08:00
 image: "/images/posts/2024/build_a_vector_extension_for_postgres_vector_type/bg.png"
 categories: ["vector database", "Postgres"]
 author: "SteveLauC"
 tags: ["vector database", "Postgres"]
+lang: "en"
+category: "Blog"
+subcategory: "Technology"
 draft: false
 ---
 
@@ -29,15 +32,15 @@ A typical Postgres extension can be roughly split into 2 layers:
 If you take a look at the source code of pgvector, this 3-layer structure is quite obvious, the [`src`](https://github.com/pgvector/pgvector/tree/master/src) directory is for C code, the [`sql`](https://github.com/pgvector/pgvector/tree/master/sql) directory contains higher SQL glues, and there is also a [control file](https://github.com/pgvector/pgvector/blob/master/vector.control). So how does pgrx make extension building easier?
 
 1. It wraps the Postgres C APIs in Rust
-   
+
    As we said, even though we build extensions in Rust, Postgres's APIs are still C, pgrx tries to wrap them in Rust so we don't need to bother with C.
-   
+
 2. SQL glues are generated using Rust macros, if possible
 
    Later we will see that pgrx could generate the SQL glues for us automatically.
 
 3. pgrx generates the control file for us
-   
+
 ## `CREATE TYPE vector`
 
 Let's define our `Vector` type, using `std::vec::Vec` looks pretty straightforward, and since `vector` needs to store floats, we use `f64` here:
@@ -48,19 +51,19 @@ struct Vector {
 }
 ```
 
-Then what? 
+Then what?
 
-The SQL statement used to create new types is `CREATE TYPE ...`, from its [documentation](https://www.postgresql.org/docs/current/sql-createtype.html), we would know that the `vector` type we are implementing is a *base type*, to create a base type, support functions `input_function` and `output_function` are required. And since it needs to take a dimension argument (`vector(DIMENSION)`), which is implemented using *modifer*, functions `type_modifier_input_function` and `type_modifier_output_function` are also needed. So we need to implement these 4 functions for our `Vector` type.
+The SQL statement used to create new types is `CREATE TYPE ...`, from its [documentation](https://www.postgresql.org/docs/current/sql-createtype.html), we would know that the `vector` type we are implementing is a _base type_, to create a base type, support functions `input_function` and `output_function` are required. And since it needs to take a dimension argument (`vector(DIMENSION)`), which is implemented using _modifer_, functions `type_modifier_input_function` and `type_modifier_output_function` are also needed. So we need to implement these 4 functions for our `Vector` type.
 
 ### `input_function`
 
-To quote the documentation, 
+To quote the documentation,
 
-> The `input_function` converts the type's external textual representation to the internal representation used by the operators and functions defined for the type. 
+> The `input_function` converts the type's external textual representation to the internal representation used by the operators and functions defined for the type.
 >
-> The input function can be declared as taking one argument of type `cstring`, or as taking three arguments of types `cstring`, `oid`, `integer`. The first argument is the input text as a C string, the second argument is the type's own OID (except for array types, which instead receive their element type's OID), and the third is the typmod of the destination column, if known (-1 will be passed if not). The input function must return a value of the data type itself. 
+> The input function can be declared as taking one argument of type `cstring`, or as taking three arguments of types `cstring`, `oid`, `integer`. The first argument is the input text as a C string, the second argument is the type's own OID (except for array types, which instead receive their element type's OID), and the third is the typmod of the destination column, if known (-1 will be passed if not). The input function must return a value of the data type itself.
 
-Ok, from the documentation, this `input_function` is used for deserialization, `serde` is the most popular  de/serialization library in Rust, so let's use it. For the arguments, since the `vector` needs a type modifier, we need it to take 3 arguments. Here is what our `input_function` looks like:
+Ok, from the documentation, this `input_function` is used for deserialization, `serde` is the most popular de/serialization library in Rust, so let's use it. For the arguments, since the `vector` needs a type modifier, we need it to take 3 arguments. Here is what our `input_function` looks like:
 
 ```rust
 #[pg_extern(immutable, strict, parallel_safe, requires = [ "shell_type" ])]
@@ -83,7 +86,7 @@ fn vector_input(
             pgrx::error!("this vector's dimension [{}] is too large", value.len());
         }
     };
-    
+
     // cast should be safe as dimension should be a positive
     let expected_dimension = match u16::try_from(type_modifier) {
         Ok(d) => d,
@@ -92,7 +95,7 @@ fn vector_input(
         }
     };
 
-    // check the dimension 
+    // check the dimension
     if dimension != expected_dimension {
         pgrx::error!(
             "mismatched dimension, expected {}, found {}",
@@ -111,15 +114,15 @@ That's a bunch of stuff, let's go through it piece by piece.
 #[pg_extern(immutable, strict, parallel_safe, requires = [ "shell_type" ])]
 ```
 
-If you mark a function with `pg_extern`, then `pgrx` will automatically generate SQL like `CREATE FUNCTION <your function>` for you, `immutable, strict, parallel_safe` are the attributes that you think your function has, they correspond to the attributes listed in the [`CREATE FUNCTION` doc](https://www.postgresql.org/docs/current/sql-createfunction.html).  Because this Rust macro is used to generate SQL, and SQLs could depend on each other, this `requires = [ "shell_type" ]` is used to clarify this dependency relationship. 
+If you mark a function with `pg_extern`, then `pgrx` will automatically generate SQL like `CREATE FUNCTION <your function>` for you, `immutable, strict, parallel_safe` are the attributes that you think your function has, they correspond to the attributes listed in the [`CREATE FUNCTION` doc](https://www.postgresql.org/docs/current/sql-createfunction.html). Because this Rust macro is used to generate SQL, and SQLs could depend on each other, this `requires = [ "shell_type" ]` is used to clarify this dependency relationship.
 
 `shell_type` is the name of another SQL snippet that defines the shell type, what is shell type? It behaves like a placeholder so that we can have a `vector` type to use before we fully implement it. The SQL generated by this `#[pg_extern]` macro would be:
 
 ```sql
 CREATE FUNCTION "vector_input"(
 	"input" cstring,
-	"_oid" oid, 
-	"type_modifier" INT 
+	"_oid" oid,
+	"type_modifier" INT
 ) RETURNS vector
 ```
 
@@ -127,12 +130,9 @@ As you can see, this function `RETURNS vector`, but how can we have a `vector` t
 
 ![circular_dependency](/images/posts/2024/build_a_vector_extension_for_postgres_vector_type/circular_dependency.png)
 
-
 Shell type is exactly for this! We can define a shell type (A dummy type, no function needs to be provided), and let our functions depend on it:
 
-
 ![vector_type](/images/posts/2024/build_a_vector_extension_for_postgres_vector_type/vector_type.png)
-
 
 `pgrx` won't define this shell type for us, we need to manually do this in SQL, here is what it looks like:
 
@@ -166,7 +166,7 @@ let value = match serde_json::from_str::<Vec<f64>>(
 };
 ```
 
-Then we convert `input` to a UTF-8 encoded `&str` and pass it to `serde_json::from_str()`.  The input text should be UTF-8 encoded, so we should be safe. If any error happens during deserialization, just error out with [`pgrx::error!()`](https://docs.rs/pgrx/latest/pgrx/macro.error.html), which will log at the `error` level and terminate the current transaction.
+Then we convert `input` to a UTF-8 encoded `&str` and pass it to `serde_json::from_str()`. The input text should be UTF-8 encoded, so we should be safe. If any error happens during deserialization, just error out with [`pgrx::error!()`](https://docs.rs/pgrx/latest/pgrx/macro.error.html), which will log at the `error` level and terminate the current transaction.
 
 ```rust
 let dimension = match u16::try_from(value.len()) {
@@ -188,7 +188,7 @@ let expected_dimension = match u16::try_from(type_modifier) {
 The max dimension supported by us is `u16::MAX`, we do this simply because this is what pgvector does.
 
 ```rust
-// check the dimension 
+// check the dimension
 if dimension != expected_dimension {
     pgrx::error!(
         "mismatched dimension, expected {}, found {}",
@@ -201,7 +201,6 @@ Vector { value }
 ```
 
 Lastly, we check if the input vector has the expected dimension, and error out if not. Otherwise, we return the parsed vector.
-
 
 ### `output_function`
 
@@ -270,7 +269,7 @@ CREATE TYPE vector (
     OUTPUT = vector_output,
     TYPMOD_IN = vector_modifier_input,
     TYPMOD_OUT = vector_modifier_output,
-    STORAGE = external 
+    STORAGE = external
 );
 "#,
     name = "concrete_type",
@@ -472,7 +471,7 @@ note: the trait `SqlTranslatable` must be implemented
    = note: this error originates in the attribute macro `pg_extern` (in Nightly builds, run with -Z macro-backtrace for more info)
 ```
 
-This note says that we should implement `SqlTranslatable` for our `Vector` type, what is trait for? Its doc says that this trait represents "A value which can be represented in SQL", which is kinda confusing. Let's me explain a bit. Since pgrx generates SQL for us, and it would use our `Vector` type, it requires us to tell it what our type should be called in SQL, a.k.a., translate it to SQL. 
+This note says that we should implement `SqlTranslatable` for our `Vector` type, what is trait for? Its doc says that this trait represents "A value which can be represented in SQL", which is kinda confusing. Let's me explain a bit. Since pgrx generates SQL for us, and it would use our `Vector` type, it requires us to tell it what our type should be called in SQL, a.k.a., translate it to SQL.
 
 In SQL, our `Vector` type is simply called `vector`, so here is our implementation:
 
@@ -500,7 +499,6 @@ fn vector_output(value: Vector) -> CString
 Using `Vector` as function return value and argument requires it to be representable following Postgres's rule. Postgres uses [`Datum`](https://stackoverflow.com/q/53543909/14092446), the binary representation for all the SQL types. So we need to provide a round trip between our `Vector` type and `Datum`, through these 2 traits.
 
 Since our `Vector` type is basically a `std::vec::Vec<f64>`, and these 2 traits are implemented for `Vec`, we can simply use these implementations:
-
 
 ```rust
 impl FromDatum for Vector {
@@ -596,10 +594,9 @@ DETAIL:
              at main.c:197:3
 ```
 
-Well, Postgres panicked, because the `type_modifier` argument is `-1`, which can not be casted into a `u16`. But how can the `type_modifier` be `-1`, wouldn't it be `-1` if and only if the type modifier is unknown? The type modifier `3` is clearly stored in the metadata, so it is definitely known. 
+Well, Postgres panicked, because the `type_modifier` argument is `-1`, which can not be casted into a `u16`. But how can the `type_modifier` be `-1`, wouldn't it be `-1` if and only if the type modifier is unknown? The type modifier `3` is clearly stored in the metadata, so it is definitely known.
 
-I was stuck here for a while, and guess what, [I am not the only one](https://www.postgresql.org/message-id/56EA3507.6090701@anastigmatix.net).  IMHO, this is a bug, but not everyone thinks so. Let's accept the truth that it just can be `-1`, the workaround for this is to create a cast function that casts `Vector` to `Vector`, where you can access the stored type modifier:
-
+I was stuck here for a while, and guess what, [I am not the only one](https://www.postgresql.org/message-id/56EA3507.6090701@anastigmatix.net). IMHO, this is a bug, but not everyone thinks so. Let's accept the truth that it just can be `-1`, the workaround for this is to create a cast function that casts `Vector` to `Vector`, where you can access the stored type modifier:
 
 ```rust
 /// Cast a `vector` to a `vector`, the conversion is meaningless, but we do need
@@ -682,7 +679,6 @@ INSERT 0 1
 
 `INSERT` works, let's try `SELECT`:
 
-
 ```sql
 pg_vector_ext=# SELECT * FROM items;
        v
@@ -691,7 +687,7 @@ pg_vector_ext=# SELECT * FROM items;
 (1 row)
 ```
 
-Congratulation! You just added the `vector` type support for Postgres!  Here is the full code of our implementation:
+Congratulation! You just added the `vector` type support for Postgres! Here is the full code of our implementation:
 
 > src/vector_type.rs
 
@@ -866,7 +862,7 @@ CREATE TYPE vector (
     OUTPUT = vector_output,
     TYPMOD_IN = vector_modifier_input,
     TYPMOD_OUT = vector_modifier_output,
-    STORAGE = external 
+    STORAGE = external
 );
 "#,
     name = "concrete_type",

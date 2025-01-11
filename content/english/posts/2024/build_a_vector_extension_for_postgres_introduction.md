@@ -2,11 +2,14 @@
 title: "Build a Vector Extension for Postgres - Introduction"
 meta_title: "Build a Vector Extension for Postgres - Introduction"
 description: ""
-date: 2024-12-18T08:00:00Z
+date: 2024-12-18T16:00:00.000000000+08:00
 image: "/images/posts/2024/build_a_vector_extension_for_postgres_introduction/bg.png"
 categories: ["vector database", "Postgres"]
 author: "SteveLauC"
 tags: ["vector database", "Postgres"]
+lang: "en"
+category: "Blog"
+subcategory: "Technology"
 draft: false
 ---
 
@@ -85,26 +88,26 @@ $ bat src/lib.rs
        │ File: src/lib.rs
 ───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    1   │ use pgrx::prelude::*;
-   2   │ 
+   2   │
    3   │ ::pgrx::pg_module_magic!();
-   4   │ 
+   4   │
    5   │ #[pg_extern]
    6   │ fn hello_pg_vector_ext() -> &'static str {
    7   │     "Hello, pg_vector_ext"
    8   │ }
-   9   │ 
+   9   │
   10   │ #[cfg(any(test, feature = "pg_test"))]
   11   │ #[pg_schema]
   12   │ mod tests {
   13   │     use pgrx::prelude::*;
-  14   │ 
+  14   │
   15   │     #[pg_test]
   16   │     fn test_hello_pg_vector_ext() {
   17   │         assert_eq!("Hello, pg_vector_ext", crate::hello_pg_vector_ext());
   18   │     }
-  19   │ 
+  19   │
   20   │ }
-  21   │ 
+  21   │
   22   │ /// This module is required by `cargo pgrx test` invocations.
   23   │ /// It must be visible at the root of your extension crate.
   24   │ #[cfg(test)]
@@ -112,7 +115,7 @@ $ bat src/lib.rs
   26   │     pub fn setup(_options: Vec<&str>) {
   27   │         // perform one-off initialization when the pg_test framework starts
   28   │     }
-  29   │ 
+  29   │
   30   │     #[must_use]
   31   │     pub fn postgresql_conf_options() -> Vec<&'static str> {
   32   │         // return any postgresql.conf settings that are required for your tests
@@ -143,7 +146,7 @@ It will start the Postgres 17 instance and connect to it via `psql`, we can inst
 pg_vector_ext=# CREATE EXTENSION pg_vector_ext;
 CREATE EXTENSION
 pg_vector_ext=# SELECT hello_pg_vector_ext();
- hello_pg_vector_ext  
+ hello_pg_vector_ext
 ----------------------
  Hello, pg_vector_ext
 (1 row)

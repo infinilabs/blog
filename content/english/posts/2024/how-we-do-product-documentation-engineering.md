@@ -2,11 +2,14 @@
 title: "How We Do Documentation Engineering"
 meta_title: "How We Do Documentation Engineering"
 description: "Managing comprehensive documentation might seem like an enormous task, especially since we don’t have a dedicated documentation team, So, how do we do it?"
-date: 2024-12-16T08:00:00Z
+date: 2024-12-16T16:00:00.000000000+08:00
 image: "/images/posts/2024/documentation-engineering/how-we-do-product-documentation-engineering.jpg"
 categories: ["Product", "Documentation", "Engineering"]
 author: "Medcl"
 tags: ["Product", "Documentation", "Engineering"]
+lang: "en"
+category: "Blog"
+subcategory: "Culture"
 draft: false
 ---
 
@@ -19,7 +22,6 @@ For each product, you can even switch between different versions effortlessly, l
 ![Documentation Engineering](/images/posts/2024/documentation-engineering/versioin-switch-in-doc-site.jpg)
 
 Managing comprehensive documentation might seem like an enormous task, especially since we don’t have a dedicated documentation team. However, with limited resources and many competing priorities, we’ve streamlined a practical and efficient approach to product documentation engineering.
-
 
 So, how do we do it?
 
@@ -51,7 +53,6 @@ We maintain separate repositories for each part of the documentation workflow. T
 - Product with docs: [https://github.com/infinilabs/gateway](https://github.com/infinilabs/gateway)
 
 By separating concerns, we make it easier to manage updates, streamline collaboration, and keep everything organized.
-
 
 As you can see the layout of compiled folder is looks like this:
 
@@ -98,7 +99,6 @@ languages:
     contentDir: content.en
     weight: 3
 
-
 menu:
   before: []
   after:
@@ -106,9 +106,8 @@ menu:
       url: "https://github.com/infinilabs/gateway"
       weight: 10
 
-...
+---
 EMITTED
-...
 ```
 
 Make sure you changed the right github's repo address and the product name.
@@ -169,7 +168,6 @@ docs-restore-generated-file:
 
 ```
 
-
 Usually, there’s no need to make any changes—simply copy these files to your new product, and everything will work seamlessly.
 
 ---
@@ -185,9 +183,9 @@ on:
   push:
     branches:
       - main
-      - 'v*'
+      - "v*"
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   build-deploy-docs:
@@ -258,7 +256,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          
+
           if [[ -n $(git status --porcelain) ]]; then
             git add .
             git commit -m "Rebuild $PRODUCT_NAME docs for version $VERSION"
@@ -297,15 +295,17 @@ jobs:
           else
             echo "Current ref is 'main', skipping rebuild for 'latest'."
           fi
-        working-directory: ./  # Working in the product repo
+        working-directory: ./ # Working in the product repo
 ```
 
 If you look closely at the GitHub Actions workflow, it simplifies the entire process by automating key tasks:
+
 - Monitor Branches and Tags: Watches for branches or tags starting with v and validates them as semantic versioned branches or tags. Only valid versions trigger the documentation build process.
 - Fetch Theme: Pulls the documentation theme from a separate repository to ensure a consistent look and feel across all products.
 - Build and Deploy: Compiles the documentation into static files using Hugo, commits the changes with a clear and informative message, and pushes the updates to the docs repository.
 
 Through GitHub Actions, the entire workflow becomes seamless:
+
 - Compile: Converts Markdown files into a polished static site using Hugo.
 - Deploy: Publishes the site effortlessly to GitHub Pages.
 
