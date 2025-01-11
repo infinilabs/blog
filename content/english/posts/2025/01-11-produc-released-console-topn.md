@@ -66,7 +66,6 @@ Monitor critical metrics across indices, nodes, and shards:
 - **Resource Optimization:** Detect resource-intensive nodes or shards to improve cluster efficiency.
 - **Data-Driven Decisions:** Gain actionable insights for better operational and business outcomes.
 
-For a detailed guide on using TopN, check out our [dedicated blog post](#).
 
 ---
 
