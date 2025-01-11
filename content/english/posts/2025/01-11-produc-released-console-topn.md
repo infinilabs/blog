@@ -4,6 +4,7 @@ meta_title: "INFINI Console v1.28 Released"
 description: "Discover the new TopN feature and other enhancements in INFINI Console v1.28."
 date: "2025-01-10T09:00:00Z"
 categories: [ "Release", "News"]
+image: "/images/posts/2025/update.png"
 author: "Medcl"
 tags: ["Console", "TopN", "Release"]
 draft: false
