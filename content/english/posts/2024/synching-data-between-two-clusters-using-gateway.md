@@ -2,7 +2,7 @@
 title: "Synching data between two Elasticsearch clusters using a gateway"
 meta_title: "Synching data between two ES clusters"
 description: "Introducing the request replication feature of the INFINI Gateway."
-date: 2024-12-21T17:00:00.000000000+08:00
+date: 2024-12-21T17:00:00+08:00
 image: "/images/posts/2024/synching-data-between-two-clusters-using-gateway/cover.jpg"
 categories: ["Elasticsearch", "Gateway"]
 author: "Frank"

@@ -2,7 +2,7 @@
 title: "Adding Searchbox to Hugo!"
 meta_title: "Adding Searchbox to Hugo Blog!"
 description: "How to add a searchbox to your hugoblog site."
-date: 2024-12-10T14:00:00.000000000+08:00
+date: 2024-12-10T14:00:00+08:00
 image: "/images/posts/2024/adding-searchbox-to-blog-site.png"
 categories: ["Pizza", "Search"]
 author: "Medcl"

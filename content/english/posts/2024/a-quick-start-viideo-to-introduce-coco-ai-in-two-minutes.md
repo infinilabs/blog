@@ -2,7 +2,7 @@
 title: "Introducing Coco AI in Two Minutes - A Quick Start Video 🥥"
 meta_title: "Introducing Coco AI in Two Minutes - A Quick Start Video "
 description: "Discover How Coco AI to work with Google Drive"
-date: 2024-12-10T15:00:00.000000000+08:00
+date: 2024-12-10T15:00:00+08:00
 image: "/images/posts/2024/introducing-coco-ai-in-two-minutes.png"
 categories: ["AI", "Enterprise", "Search"]
 author: "Medcl"

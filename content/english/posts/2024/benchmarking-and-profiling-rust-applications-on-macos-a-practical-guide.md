@@ -2,7 +2,7 @@
 title: "Profiling Rust Code on macOS: My Daily Workflow"
 meta_title: "Rust Profiling on macOS: Micro-Benchmarks, Flamegraphs, and DTrace"
 description: "Learn how to optimize Rust applications with profiling tools like criterion, cargo flamegraph, and DTrace on macOS."
-date: 2024-12-11T16:00:00.000000000+08:00
+date: 2024-12-11T16:00:00+08:00
 image: "/images/posts/2024/benchmarking-and-profiling-rust-applications-on-macos-a-practical-guide/cover.jpg"
 categories: ["Rust", "Performance"]
 author: "Medcl"

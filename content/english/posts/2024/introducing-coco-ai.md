@@ -2,7 +2,7 @@
 title: "Introducing Coco AI - Connect & Collaborate 🥥"
 meta_title: "Coco AI: Your Unified Enterprise Search Platform"
 description: "Discover how Coco AI revolutionizes enterprise search and collaboration with unified data and Gen-AI chat capabilities."
-date: 2024-12-10T16:00:00.000000000+08:00
+date: 2024-12-10T16:00:00+08:00
 image: "/images/posts/2024/introducing-coco-ai.jpg"
 categories: ["AI", "Enterprise", "Search"]
 author: "Medcl"
