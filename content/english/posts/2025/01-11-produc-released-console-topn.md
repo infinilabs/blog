@@ -1,6 +1,6 @@
 ---
-title: "INFINI Console v1.28 Released – 2025-01-13"
-meta_title: "INFINI Console v1.28 Released – 2025-01-13"
+title: "INFINI Console v1.28 Released"
+meta_title: "INFINI Console v1.28 Released"
 description: "Discover the new TopN feature and other enhancements in INFINI Console v1.28."
 date: "2025-01-10T09:00:00Z"
 categories: [ "Release", "News"]
@@ -9,7 +9,7 @@ tags: ["Console", "TopN", "Release"]
 draft: false
 ---
 
-# INFINI Console v1.28 Released – 2025-01-13
+# INFINI Console v1.28 Released
 
 
 We’re excited to announce **INFINI Console v1.28**, the latest update from **INFINI Labs**! This release brings the powerful **TopN** feature to help you identify key metrics efficiently, alongside other performance improvements and bug fixes. Read on for all the details and enhancements in this release.
