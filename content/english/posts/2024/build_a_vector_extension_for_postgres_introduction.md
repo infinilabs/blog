@@ -9,7 +9,7 @@ author: "SteveLauC"
 tags: ["vector database", "Postgres"]
 lang: "en"
 category: "Blog"
-subcategory: "technology"
+subcategory: "Technology"
 draft: false
 ---
 

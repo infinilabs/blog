@@ -9,7 +9,7 @@ author: "Frank"
 tags: ["Elasticsearch", "Gateway", "Search"]
 lang: "en"
 category: "Blog"
-subcategory: "technology"
+subcategory: "Technology"
 draft: false
 ---
 

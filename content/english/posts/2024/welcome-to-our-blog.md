@@ -9,7 +9,7 @@ author: "Medcl"
 tags: ["welcome", "search", "open source"]
 lang: "en"
 category: "Blog"
-subcategory: "culture"
+subcategory: "Culture"
 draft: false
 ---
 

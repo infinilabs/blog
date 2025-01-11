@@ -9,7 +9,7 @@ author: "Medcl"
 tags: ["Coco AI", "Search", "Gen-AI", "Enterprise"]
 lang: "en"
 category: "Blog"
-subcategory: "product"
+subcategory: "Product"
 draft: false
 ---
 

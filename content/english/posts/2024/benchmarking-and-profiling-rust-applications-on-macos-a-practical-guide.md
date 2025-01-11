@@ -9,7 +9,7 @@ author: "Medcl"
 tags: ["Rust", "Profiling", "macOS", "criterion", "flamegraph"]
 lang: "en"
 category: "Blog"
-subcategory: "technology"
+subcategory: "Technology"
 draft: false
 ---
 

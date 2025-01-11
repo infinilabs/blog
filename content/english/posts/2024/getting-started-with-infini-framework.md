@@ -9,7 +9,7 @@ author: "Medcl"
 tags: ["INFINI Framework", "Golang", "Framework", "Enterprise"]
 lang: "en"
 category: "Blog"
-subcategory: "product"
+subcategory: "Product"
 draft: false
 ---
 

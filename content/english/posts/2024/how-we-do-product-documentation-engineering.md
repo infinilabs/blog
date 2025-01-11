@@ -9,7 +9,7 @@ author: "Medcl"
 tags: ["Product", "Documentation", "Engineering"]
 lang: "en"
 category: "Blog"
-subcategory: "culture"
+subcategory: "Culture"
 draft: false
 ---
 
