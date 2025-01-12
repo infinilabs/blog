@@ -8,8 +8,8 @@ categories: ["AI", "Enterprise", "Search"]
 author: "Medcl"
 tags: ["Coco AI", "Search", "Gen-AI", "Enterprise"]
 lang: "en"
-category: "Blog"
-subcategory: "Product"
+category: "Product"
+subcategory: "Quick start"
 draft: false
 ---
 

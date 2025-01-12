@@ -8,8 +8,8 @@ categories: ["Framework", "Golang"]
 author: "Medcl"
 tags: ["INFINI Framework", "Golang", "Framework", "Enterprise"]
 lang: "en"
-category: "Blog"
-subcategory: "Product"
+category: "Product"
+subcategory: "Getting Started"
 draft: false
 ---
 

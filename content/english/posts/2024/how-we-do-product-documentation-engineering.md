@@ -8,8 +8,8 @@ categories: ["Product", "Documentation", "Engineering"]
 author: "Medcl"
 tags: ["Product", "Documentation", "Engineering"]
 lang: "en"
-category: "Blog"
-subcategory: "Culture"
+category: "Culture"
+subcategory: "INFINI Labs"
 draft: false
 ---
 
