@@ -18,8 +18,8 @@ tags:
     "hugo",
   ]
 lang: "en"
-category: "Blog"
-subcategory: "Technology"
+category: "Technology"
+subcategory: "WebAssembly"
 draft: false
 ---
 

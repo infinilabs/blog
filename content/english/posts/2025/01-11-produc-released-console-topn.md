@@ -8,8 +8,8 @@ image: "/images/posts/2025/update.png"
 author: "Medcl"
 tags: ["Console", "TopN", "Release"]
 lang: "en"
-category: "Blog"
-subcategory: "Product"
+category: "Product"
+subcategory: "Released"
 draft: false
 ---
 

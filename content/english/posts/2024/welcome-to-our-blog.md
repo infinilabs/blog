@@ -8,8 +8,8 @@ categories: ["Welcome", "Blog"]
 author: "Medcl"
 tags: ["welcome", "search", "open source"]
 lang: "en"
-category: "Blog"
-subcategory: "Culture"
+category: "Culture"
+subcategory: "Welcome"
 draft: false
 ---
 

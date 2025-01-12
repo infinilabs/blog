@@ -8,8 +8,8 @@ categories: ["Elasticsearch", "Gateway"]
 author: "Frank"
 tags: ["Elasticsearch", "Gateway", "Search"]
 lang: "en"
-category: "Blog"
-subcategory: "Technology"
+category: "Technology"
+subcategory: "Gateway"
 draft: false
 ---
 

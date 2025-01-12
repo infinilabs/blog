@@ -8,8 +8,8 @@ categories: ["Rust", "Performance"]
 author: "Medcl"
 tags: ["Rust", "Profiling", "macOS", "criterion", "flamegraph"]
 lang: "en"
-category: "Blog"
-subcategory: "Technology"
+category: "Technology"
+subcategory: "Benchmark"
 draft: false
 ---
 

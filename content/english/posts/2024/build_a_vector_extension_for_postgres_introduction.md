@@ -8,8 +8,8 @@ categories: ["vector database", "Postgres"]
 author: "SteveLauC"
 tags: ["vector database", "Postgres"]
 lang: "en"
-category: "Blog"
-subcategory: "Technology"
+category: "Technology"
+subcategory: "Introduction"
 draft: false
 ---
 
