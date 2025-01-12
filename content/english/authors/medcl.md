@@ -3,6 +3,9 @@ title: Medcl
 email: medcl@infinilabs.com
 image: "/images/avatar/medcl.jpeg"
 description: Founder & CEO of INFINI Labs
+lang: "en"
+category: "Author"
+subcategory: ""
 social:
   - name: github
     icon: fa-brands fa-github

@@ -2,7 +2,7 @@
 title: "Welcome to the INFINI Labs Blog! 🚀"
 meta_title: "Welcome to INFINI Labs"
 description: "The first post of our blog, sharing our journey and passion for search and innovation."
-date: 2024-12-10T13:00:00.000000000+08:00
+date: 2024-12-10T13:00:00+08:00
 image: "/images/posts/2024/welcome-to-our-blog.jpg"
 categories: ["Welcome", "Blog"]
 author: "Medcl"

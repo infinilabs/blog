@@ -2,7 +2,7 @@
 title: "How We Do Documentation Engineering"
 meta_title: "How We Do Documentation Engineering"
 description: "Managing comprehensive documentation might seem like an enormous task, especially since we don’t have a dedicated documentation team, So, how do we do it?"
-date: 2024-12-16T16:00:00.000000000+08:00
+date: 2024-12-16T16:00:00+08:00
 image: "/images/posts/2024/documentation-engineering/how-we-do-product-documentation-engineering.jpg"
 categories: ["Product", "Documentation", "Engineering"]
 author: "Medcl"

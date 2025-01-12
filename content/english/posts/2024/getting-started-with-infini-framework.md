@@ -2,7 +2,7 @@
 title: "Getting Started with INFINI Framework - Our homemade framework for building enterprise golang applications"
 meta_title: "Getting Started with INFINI Framework - Our homemade framework for building enterprise golang applications"
 description: "Discover how Coco AI revolutionizes enterprise search and collaboration with unified data and Gen-AI chat capabilities."
-date: 2024-12-15T16:00:00.000000000+08:00
+date: 2024-12-15T16:00:00+08:00
 image: "/images/posts/2024/introducing-infini-framework.jpg"
 categories: ["Framework", "Golang"]
 author: "Medcl"

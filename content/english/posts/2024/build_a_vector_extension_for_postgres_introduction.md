@@ -2,7 +2,7 @@
 title: "Build a Vector Extension for Postgres - Introduction"
 meta_title: "Build a Vector Extension for Postgres - Introduction"
 description: ""
-date: 2024-12-18T16:00:00.000000000+08:00
+date: 2024-12-18T16:00:00+08:00
 image: "/images/posts/2024/build_a_vector_extension_for_postgres_introduction/bg.png"
 categories: ["vector database", "Postgres"]
 author: "SteveLauC"
