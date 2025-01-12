@@ -110,7 +110,7 @@ Monitor critical metrics across indices, nodes, and shards:
 
 To quickly install and start using the INFINI Console, run the following command:
 
-```
+```shell
 curl -sSL http://get.infini.cloud | bash -s -- -p console
 ```
 
