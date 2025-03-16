@@ -116,7 +116,7 @@ Optimization and improvement
 
 ## Download & Get Started
 
-Coco AI v0.2 is now available for **MacOS 12 and above**. You can start using it today by downloading from the following links:
+Coco AI v0.2 is now available for **MacOS 12 and above** and **Windows platform**. You can start using it today by downloading from the following links:
 
 - **Download Coco AI**: - [https://coco.rs/](https://coco.rs/)
 - **Desktop App**: [Coco AI App's Github](https://github.com/infinilabs/coco-app/)
