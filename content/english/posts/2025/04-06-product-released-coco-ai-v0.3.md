@@ -1,5 +1,5 @@
 ---
-title: "Coco AI 0.3 released – Added support for Widget external site integration"
+title: "Coco AI 0.3 Launches with Powerful Widget Integration for External Platforms"
 meta_title: "Coco AI v0.3 Released"
 description: "Coco AI v0.3 is now available! A powerful, open-source AI-powered search and productivity tool for seamless access to personal and enterprise knowledge."
 date: "2025-04-06T08:00:00+08:00"
