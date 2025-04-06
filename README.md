@@ -6,8 +6,9 @@ Official blog repository for INFINI Labs, built with Hugo.
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
-- Hugo (v0.145.0 or higher)
+- Node.js (v18.16.1 or higher)
+- Hugo (v0.139.2 or higher)
+- Go (v1.23.3 or higher)
 - pnpm (latest version)
 
 ### Local Development
