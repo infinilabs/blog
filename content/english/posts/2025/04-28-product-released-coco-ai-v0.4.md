@@ -28,7 +28,7 @@ draft: false
 
 # Coco AI v0.4 Released
 
-We’re excited to announce the official release of **Coco AI v0.4** – the **third** preview version of our powerful, open-source, cross-platform unified AI search and productivity tool!
+We’re excited to announce the official release of **Coco AI v0.4** – the latest stable version of our powerful, open-source, cross-platform unified AI search and productivity tool!
 
 Coco AI allows you to seamlessly search through various data sources such as local applications, cloud storage (Google Drive, Notion, Yuque, Hugo), and enterprise knowledge bases. By leveraging advanced models like **DeepSeek**, Coco AI transforms personal knowledge management, enabling users to efficiently access information with enhanced privacy and security.
 
