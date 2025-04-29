@@ -103,7 +103,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![search-20250428](/images/posts/2025/coco-v0.4/search-20250428.gif)
 
-![chat-20250428](/images/posts/2025/coco-v0.4/chat-20250428.gif)
+![chat-20250428](/images/posts/2025/coco-v0.4/ai-0429.gif)
 
 ![search-coco](/images/posts/2025/coco-v0.4/search-coco.png)
 
@@ -113,7 +113,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![calculator-2](/images/posts/2025/coco-v0.4/calculator-2.png)
 
-![start-app](/images/posts/2025/coco-v0.4/start-app.png)
+![start-app](/images/posts/2025/coco-v0.4/start-2.png)
 
 ## Coco Server Client 0.4.0
 
