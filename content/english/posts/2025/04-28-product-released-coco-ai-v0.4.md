@@ -53,7 +53,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ### Breaking changes
 
-- Improve assistant settings, add MCP support
+- None
 
 ### Features
 
@@ -119,7 +119,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ### Breaking changes  
 
-- Improve assistant settings, add MCP support
+- None
 
 ### Features
 
