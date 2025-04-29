@@ -107,13 +107,13 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![search-coco](/images/posts/2025/coco-v0.4/search-coco.png)
 
-![search-menu](/images/posts/2025/coco-v0.4/search-menu.jpg)
+![search-menu](/images/posts/2025/coco-v0.4/search-menu.png)
 
-![calculator-1](/images/posts/2025/coco-v0.4/calculator-1.jpg)
+![calculator-1](/images/posts/2025/coco-v0.4/calculator-1.png)
 
-![calculator-2](/images/posts/2025/coco-v0.4/calculator-2.jpg)
+![calculator-2](/images/posts/2025/coco-v0.4/calculator-2.png)
 
-![start-app](/images/posts/2025/coco-v0.4/start-app.jpg)
+![start-app](/images/posts/2025/coco-v0.4/start-app.png)
 
 ## Coco Server Client 0.4.0
 
@@ -151,19 +151,19 @@ You can create your own personal AI Assistant with Coco AI~
 
 ### Screenshots
 
-![assistant](/images/posts/2025/coco-v0.4/assistant.jpg)
+![assistant](/images/posts/2025/coco-v0.4/assistant1.png)
 
-![assistant-edit](/images/posts/2025/coco-v0.4/assistant-edit.jpg)
+![assistant-edit](/images/posts/2025/coco-v0.4/assistant-edit.png)
 
-![mcp](/images/posts/2025/coco-v0.4/mcp.jpg)
+![mcp](/images/posts/2025/coco-v0.4/mcp.png)
 
-![mcp-edit](/images/posts/2025/coco-v0.4/mcp-edit.jpg)
+![mcp-edit](/images/posts/2025/coco-v0.4/mcp-edit.png)
 
-![model](/images/posts/2025/coco-v0.4/model.jpg)
+![model](/images/posts/2025/coco-v0.4/model.png)
 
-![model-edit](/images/posts/2025/coco-v0.4/model-edit.jpg)
+![model-edit](/images/posts/2025/coco-v0.4/model-edit.png)
 
-![start](/images/posts/2025/coco-v0.4/start.jpg)
+![start](/images/posts/2025/coco-v0.4/start.png)
 
 ## Download & Get Started
 
