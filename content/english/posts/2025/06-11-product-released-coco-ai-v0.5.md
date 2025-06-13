@@ -52,7 +52,7 @@ You can create your own personal AI Assistant with Coco AI~
 - **Pizza-based Application Search**: Advanced application search powered by Pizza technology for more accurate and context-aware results.
 - **AI Command Quick Access**: Streamlined access to AI capabilities through quick commands, improving workflow efficiency and productivity.
 
-## Coco App Client 0.5
+## Coco App v0.5
 
 ### 🚀 Features
 
@@ -143,7 +143,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![search-menu](/images/posts/2025/coco-v0.5/ai-quick.gif)
 
-## Coco Server 0.5
+## Coco Server v0.5
 
 ### 🚀 Features
 

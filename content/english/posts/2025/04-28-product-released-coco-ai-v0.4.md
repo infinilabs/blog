@@ -49,7 +49,7 @@ You can create your own personal AI Assistant with Coco AI~
 - **Scalable & Open**: Easily integrate your own data into Coco AI via APIs and extend functionality with custom data connectors.
 - **Widget Integration**: Support for external site integration through widgets, allowing seamless embedding of Coco AI functionality into third-party websites. 
 
-## Coco App Client 0.4.0
+## Coco App  v0.4.0
 
 ### Breaking changes
 
@@ -115,7 +115,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![start-app](/images/posts/2025/coco-v0.4/start-2.png)
 
-## Coco Server 0.4.0
+## Coco Server v0.4.0
 
 ### Breaking changes  
 
