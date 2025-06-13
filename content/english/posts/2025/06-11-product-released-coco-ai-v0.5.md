@@ -143,7 +143,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![search-menu](/images/posts/2025/coco-v0.5/ai-quick.gif)
 
-## Coco Server Client 0.5
+## Coco Server 0.5
 
 ### 🚀 Features
 
