@@ -1,5 +1,5 @@
 ---
-title: "Coco AI v0.5 adds local plug-in expansion capabilities, adds Pizza-based application search, adds AI Command to quickly access AI capabilities, and more."
+title: "Coco AI v0.5 Unlocks Local Plugins, Smarter App Search, AI Overview and Instant AI Command"
 meta_title: "Coco AI v0.5 Released"
 description: "Coco AI v0.5 is now available! A powerful, open-source AI-powered search and productivity tool for seamless access to personal and enterprise knowledge."
 date: "2025-06-03T18:00:00+08:00"
@@ -133,7 +133,7 @@ You can create your own personal AI Assistant with Coco AI~
 
 ![search-2](/images/posts/2025/coco-v0.5/2.jpg)
 
-![search-3](/images/posts/2025/coco-v0.5/3.jpg)
+![search-3](/images/posts/2025/coco-v0.5/3.png)
 
 ![search-4](/images/posts/2025/coco-v0.5/4.jpg)
 
@@ -142,8 +142,6 @@ You can create your own personal AI Assistant with Coco AI~
 ![search-coco](/images/posts/2025/coco-v0.5/ai-overview.gif)
 
 ![search-menu](/images/posts/2025/coco-v0.5/ai-quick.gif)
-
-![calculator-1](/images/posts/2025/coco-v0.5/calculator.gif)
 
 ## Coco Server Client 0.5
 
