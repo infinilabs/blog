@@ -62,6 +62,7 @@ page:
 
 ![ext](/images/posts/2025/coco-v0.6/extension_store_detail_page.png)
 
+Third party extensions are open-source as well, check [it][extension-source] out!
 
 ## Detailed release notes
 
@@ -109,5 +110,6 @@ Coco AI is available on macOS, Windows, and Ubuntu. Get started by downloading i
 
 [app-github]: https://github.com/infinilabs/coco-app
 [website]: https://coco.rs/
+[extension-source]: https://github.com/infinilabs/coco-extensions
 [pr572]: https://github.com/infinilabs/coco-app/pull/572
 [download]: https://coco.rs/download
