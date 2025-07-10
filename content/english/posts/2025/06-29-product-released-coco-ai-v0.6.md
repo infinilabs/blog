@@ -1,5 +1,5 @@
 ---
-title: "Coco AI v0.6.0 released, introduce the extension store"
+title: "Coco AI v0.6 Released: Introducing the Extension Store"
 date: "2025-06-29T18:00:00+08:00"
 categories: ["Release", "News"]
 image: "/images/posts/2025/coco-v0.6/banner.png"
