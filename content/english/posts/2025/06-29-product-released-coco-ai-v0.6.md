@@ -1,5 +1,5 @@
 ---
-title: "Coco AI 0.6.0 released"
+title: "Coco AI v0.6.0 released, introduce the extension store"
 date: "2025-06-29T18:00:00+08:00"
 categories: ["Release", "News"]
 image: "/images/posts/2025/coco-v0.6/banner.png"
@@ -21,7 +21,7 @@ subcategory: "Released"
 draft: false
 ---
 
-# Coco AI 0.6.0
+# Coco AI
 
 ![boom](/images/posts/2025/coco-v0.6/coco_0_6_0_release.png)
 
@@ -66,7 +66,7 @@ Third party extensions are open-source as well, check [it][extension-source] out
 
 ## Detailed release notes
 
-### Coco AI 
+### Coco App v0.6.0
 
 #### Features
 
@@ -94,11 +94,11 @@ Third party extensions are open-source as well, check [it][extension-source] out
 - chore: log command execution results #718
 - chore: adjust styles and add button reindex #719
 
-### Coco Server
+### Coco Server v0.6.0
 
 #### Bug fix
-- fix: remove manually_renamed_title from assistant search
 
+- fix: remove manually_renamed_title from assistant search
 
 # Getting Started
 
