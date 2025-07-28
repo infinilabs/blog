@@ -168,11 +168,11 @@ You can create your own personal AI Assistant with Coco AI~
 
 ### 📸 Screenshots
 
-![coco-server-3](/images/posts/2025/coco-v0.7/coco-server-3.png)
+![coco-server-3](/images/posts/2025/coco-v0.7/coco-server-3.jpeg)
 
 ![coco-server-1](/images/posts/2025/coco-v0.7/coco-server-1.jpeg)
 
-![coco-server-2](/images/posts/2025/coco-v0.7/coco-server-2.jpeg)
+![coco-server-2](/images/posts/2025/coco-v0.7/coco-server-2.jpg)
 
 ## Download & Get Started
 
