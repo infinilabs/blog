@@ -1,5 +1,5 @@
 ---
-title: "Coco AI v0.8: Window Management, View Extensions, Linux File Search and more Connectors"
+title: "Coco AI v0.8: Window Management, View Extensions, Linux File Search and 10x more connectors"
 meta_title: "Coco AI v0.8 Released"
 description: "Coco AI v0.8 is now available!"
 date: "2025-09-28T00:00:00+08:00"
@@ -95,6 +95,18 @@ And the search results now respect your Coco app's language:
 
 ![app_search](/images/posts/2025/coco-v0.8/app_search_lang.png)
 
+### Integrated Search Portal in Coco server
+
+With Coco AI, setting up a search portal is simple, so users can quickly access 
+the information they need, whether internally or externally.
+
+![app_search](/images/posts/2025/coco-v0.8/coco_server_integrated_search_portal.gif)
+
+### 10x more connectors
+
+TODO
+
+
 ## Detailed technical release notes
 
 ### Coco App v0.8.0
@@ -157,7 +169,9 @@ And the search results now respect your Coco app's language:
 - feat: postgresql connector #476
 - feat: mysql connector #489
 - feat: github connector #492
+- feat: Feishu/Lark connector #493
 - feat: gitlab connector #494
+- feat: salesforce connector #505
 - feat: gitea connector #509
 - feat: mssql connector #511
 - feat: oracle connector #522
