@@ -102,7 +102,7 @@ the information they need, whether internally or externally.
 
 ![app_search](/images/posts/2025/coco-v0.8/coco_server_integrated_search_portal.gif)
 
-### Added more than 10+ connectors
+### Added more than 10 connectors
 
 ![app_search](/images/posts/2025/coco-v0.8/more_connectors.png)
 
