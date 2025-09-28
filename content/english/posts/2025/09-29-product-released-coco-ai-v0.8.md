@@ -1,5 +1,5 @@
 ---
-title: "Coco AI v0.8: Window Management, View Extensions, Linux File Search and 10x more connectors"
+title: "Coco AI v0.8: Window Management, View Extensions, Linux File Search and 10+ more connectors"
 meta_title: "Coco AI v0.8 Released"
 description: "Coco AI v0.8 is now available!"
 date: "2025-09-28T00:00:00+08:00"
@@ -102,13 +102,13 @@ the information they need, whether internally or externally.
 
 ![app_search](/images/posts/2025/coco-v0.8/coco_server_integrated_search_portal.gif)
 
-### 10x more connectors
+### 10+ more connectors
 
 ![app_search](/images/posts/2025/coco-v0.8/more_connectors.png)
 
 We always want to bring more connectors to Coco AI, making searching more platforms
 and datasources easier. In this release, we've unleashed a tsunami of connectivity 
-with 10x more connectors:
+with 10+ more connectors:
 
 * Postgres
 * MySQL
