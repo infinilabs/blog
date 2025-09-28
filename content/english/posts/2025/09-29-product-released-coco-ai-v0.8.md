@@ -104,8 +104,21 @@ the information they need, whether internally or externally.
 
 ### 10x more connectors
 
-TODO
+![app_search](/images/posts/2025/coco-v0.8/more_connectors.png)
 
+We always want to bring more connectors to Coco AI, making searching more platforms
+and datasources easier. In this release, we've unleashed a tsunami of connectivity 
+with 10x more connectors:
+
+* Postgres
+* MySQL
+* GitHub
+* GitLab
+* Gitea
+* Microsoft SQL Server
+* Oracle Database
+* Salesforce
+* Feishu/Lark
 
 ## Detailed technical release notes
 
