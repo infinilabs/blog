@@ -1,5 +1,5 @@
 ---
-title: "Coco AI v0.8: Window Management, View Extensions, Linux File Search and 10+ more connectors"
+title: "Coco AI v0.8: Window Management, View Extensions, Linux File Search and 10+ connectors"
 meta_title: "Coco AI v0.8 Released"
 description: "Coco AI v0.8 is now available!"
 date: "2025-09-28T00:00:00+08:00"
@@ -102,7 +102,7 @@ the information they need, whether internally or externally.
 
 ![app_search](/images/posts/2025/coco-v0.8/coco_server_integrated_search_portal.gif)
 
-### 10+ more connectors
+### Added more than 10+ connectors
 
 ![app_search](/images/posts/2025/coco-v0.8/more_connectors.png)
 
