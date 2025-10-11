@@ -22,6 +22,14 @@ draft: false
 In this tutorial, we will show you how to develop your first Command
 extension to control the Spotify macOS app.
 
+If you are interested, here is how the extension you are going to build looks 
+like. And you can also [install][install_link] it from the Extension Store to
+actually try it out!
+
+![preview](/images/posts/2025/10-11-your-first-Coco-command-extension-Spotify-Control/screenshot1.png)
+![preview](/images/posts/2025/10-11-your-first-Coco-command-extension-Spotify-Control/screenshot2.png)
+
+
 The Spotify macOS app exposes AppleScripts that allow you to control it from the
 command line, which is where Coco Command extensions shine.
 
@@ -111,7 +119,8 @@ Once you understand how this command works, it is easy to replicate it to create
 other commands. You can view the full command list [here][spotify_control_extension_link].
 
 For how to test the extension you developed, see [Import your extension to test it][import].
-    
-    
+ 
+ 
 [spotify_control_extension_link]: https://github.com/infinilabs/coco-extensions/blob/main/extensions/fishsoup/spotify_controls/plugin.json
 [import]: https://github.com/infinilabs/coco-extensions/blob/main/docs/development/import_your_extension_to_test_it.md
+[install_link]: https://coco.rs/en/integration/extensions/detail?id=94799349426cbf3f76b2bcfb50865952
