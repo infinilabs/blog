@@ -4,7 +4,7 @@ meta_title: "Coco AI v0.10 Released"
 description: "Coco AI v0.10 is now available!"
 date: "2025-12-20T09:00:00+08:00"
 categories: ["Release", "News"]
-image: "/images/posts/2025/coco-v0.4/coco-ai-v0.4-release.png"
+image: "/images/posts/2025/coco-v0.10/v0.10.png"
 author: "Rain9"
 tags:
   ["Coco AI", "Release", "AI", "Search", "Assistant", "Extensions", "Open Source"]
