@@ -48,7 +48,7 @@ link = "https://discord.com/invite/4tKTMkkvVX"
 # announcement
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
 [announcement]
-enable = true
+enable = false
 expire_days = 7
 content = "🎉 🎉 Exciting news from INFINI Labs! We’ve officially open-sourced our products on GitHub. 👉 Check it out here: [http://github.com/infinilabs](http://github.com/infinilabs)"
 
