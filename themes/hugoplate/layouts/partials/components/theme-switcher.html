@@ -60,6 +60,10 @@
             "theme",
             document.documentElement.classList.contains("dark") ? "dark" : "light"
           );
+
+          {{/*  INFINI Labs Notice Widget theme switch  */}}
+          NoticeWidget.setTheme(document.documentElement.classList.contains("dark") ? "dark" : "light");
+
         });
       });
 

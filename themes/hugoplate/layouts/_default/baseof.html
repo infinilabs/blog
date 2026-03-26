@@ -55,14 +55,29 @@
 
 
     <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?97fabb627bf07aac91180f7315c9539e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?97fabb627bf07aac91180f7315c9539e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <!-- INFINI Labs Notice Widget -->
+    {{/*  How to use: https://github.com/infinilabs/notice-widget?tab=readme-ov-file#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8  */}}
+    <script src="https://infinilabs.com/notice-widget/notice-widget.umd.cjs"></script>
+    <script>
+      (function() {
+        NoticeWidget.init({
+          locales: {
+            "en-US": "https://infinilabs.com/notice-widget/locales/en-US.json",
+          },
+          locale: "en-US",
+          theme: "light",
+        });
+    })();
+    </script>
 
     
   </body>
