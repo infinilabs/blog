@@ -70,15 +70,18 @@ POST /index/_update/42
 
 | Operation | Description |
 |-----------|-------------|
-| `replace` | Set field to new value (re-indexes) |
+| `add` | Set field value (creates if absent) |
+| `replace` | Replace existing field value (re-indexes) |
 | `remove` | Remove field entirely |
 | `increment` / `decrement` | Atomic numeric mutation |
 | `toggle` | Flip boolean value |
-| `array_append` | Append to array field |
-| `array_remove` | Remove from array field |
-| `array_insert` | Insert at position |
-| `array_clear` | Clear array |
-| `set_if_absent` | Set only if field doesn't exist |
+| `array_append` | Append values to array field |
+| `append_unique` | Append only if value not already present (dedup) |
+| `array_replace` | Replace entire array contents |
+| `array_remove` | Remove specific values from array |
+| `array_insert` | Insert value at specific position |
+| `array_clear` | Clear array to empty |
+| `set_if_absent` | Set only if field doesn't already exist |
 
 These are not application-level conveniences that decompose into read-modify-write. They execute as single atomic operations inside the storage engine.
 
